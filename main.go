@@ -2,20 +2,11 @@ package main
 
 import (
 	"fmt"
-	"log"
-	"net/http"
+
+	"github.com/GuilhermeDeOliveiraAmorim/go-rest-api.git/routes"
 )
-
-func Home(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, "Home")
-}
-
-func handleRequest() {
-	http.HandleFunc("/", Home)
-	log.Fatal(http.ListenAndServe(":8000", nil))
-}
 
 func main() {
 	fmt.Println("Starting...")
-	handleRequest()
+	routes.HandleResquest()
 }
