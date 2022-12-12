@@ -1,3 +1,3 @@
 module github.com/GuilhermeDeOliveiraAmorim/go-rest-api.git
 
-go 1.18
+go 1.19
